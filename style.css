@@ -1,0 +1,356 @@
+/* global section */
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(235, 229, 229);
+}
+
+.navbar-brand,
+a {
+    font-size: 2.5rem;
+}
+
+p {
+    color: #4e4e4e;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+hr {
+    padding: 0.3rem;
+    background-color: #0d6efd;
+    opacity: unset;
+    width: 5%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1e1e1e;
+}
+
+
+
+
+
+
+
+/* section header */
+.intro-bg {
+    background-image: linear-gradient(183deg, rgba(255, 222, 0, 1) 0%, rgba(0, 0, 0, 0.5) 0%), url(images/intro-bg.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-nav a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+
+}
+
+.navbar-nav a:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+.intro-bg h1 {
+    font-size: 6rem;
+}
+
+.intro-bg p {
+    font-size: 3rem;
+}
+
+
+/* end section header */
+
+/* section about */
+.about {
+    width: 88%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 10rem 5rem;
+    background-color: white;
+
+}
+
+
+
+.about h2 {
+    font-size: 3.5rem;
+
+}
+
+.about p {
+    font-size: 1.8rem;
+}
+
+
+.line {
+    width: 20%;
+
+    padding: 0.3rem;
+    background-color: #0d6efd !important;
+
+}
+
+
+
+
+/* end-about section */
+
+/* servises section */
+
+.ico-circle {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+}
+
+
+.service-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #f8cdcd;
+}
+
+.services .card {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    border-radius: 1.5rem;
+}
+
+/* end services section */
+
+/* start section protoflio */
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.card-img:hover img {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.icon-add {
+    font-size: 3rem;
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+/* end section */
+
+/* start section blog */
+
+
+.header-h5 {
+
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%)
+}
+
+.blog-line {
+    width: 100%;
+    padding: 0.1rem;
+
+
+}
+
+.footer-img-card {
+    border-radius: 50%;
+    width: 5.5rem;
+
+}
+
+
+
+
+
+/* section achevment */
+.achivment {
+
+
+    background-image: linear-gradient(rgb(0, 120, 255) 0%, rgba(0, 120, 255, 0.8) 0%), url(images/counters-bg.jpg);
+    height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+.ico-circle-ahivment {
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+
+    margin: 6rem auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #cde1f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* end section blog */
+
+
+/* slider */
+.slider-area {
+    background-image: linear-gradient(rgb(0, 120, 255) 0%, rgba(0, 120, 255, 0.8) 0%), url(images/overlay-bg.jpg);
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15rem 0;
+    position: relative;
+    margin: 120px 0;
+}
+
+.img-area {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-area img {
+    width: 100%;
+}
+.carousel-caption{
+    position: static;
+    padding-bottom: 5rem;
+ 
+}
+.carousel-caption h3{
+    font-size: 3.5rem;
+}
+.carousel-caption p{
+    font-size: 2rem;
+    color: white;
+}
+/* slider end */
+
+
+/*start  contact us */
+
+.contact-us{
+    background-image: linear-gradient(rgb(0, 120, 255) 0%, rgba(0, 120, 255, 0.8) 0%), url(images/overlay-bg.jpg);
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+.container-contact{
+   z-index: 5;
+   background-color: white;
+   width: 100%;
+   top: 5rem;
+   height: auto;
+}
+/* end contact-us */
+@media only screen and (max-width : 600px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar-nav a::before {
+        content: "";
+        display: none;
+
+
+    }
+
+    .header-h5 {
+
+        left: 50%;
+        top: 66%;
+        transform: translate(-50%, -50%)
+    }
+
+    .item-achivment {
+
+        width: 100%;
+
+    }
+
+    .achivment {
+
+
+
+        height: auto;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+
+    }
+    .container-contact{
+        z-index: 5;
+        background-color: white;
+        width: 100%;
+        top: -3rem;
+        height: auto;
+     }
+
+}
